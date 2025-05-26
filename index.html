@@ -1,9 +1,72 @@
-<html>
-  <head>
-    <title>我的个人主页</title>
-  </head>
-  <body>
-    <h1>你好，欢迎来到我的GitHub主页！</h1>
-    <p>这是我第一个静态网站~</p>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的GitHub博客</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .caption {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的技术博客</h1>
+        <p>分享编程学习心得与技术实践</p>
+    </header>
+    
+    <main>
+        <article>
+            <h2>关于Web开发中的路径问题</h2>
+            
+            <div class="image-container">
+                <!-- 绝对路径图片示例 -->
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" 
+                     alt="绝对路径示例图片 - 来自Unsplash的编程图片">
+                <p class="caption">图1: 使用绝对路径引用的网络图片</p>
+            </div>
+            
+            <p>在Web开发中，路径引用是非常基础但重要的概念。绝对路径是指完整的URL地址，可以指向互联网上的任何资源。</p>
+            
+            <div class="image-container">
+                <!-- 相对路径图片示例 -->
+                <img src="images/local-image.jpg" 
+                     alt="相对路径示例图片 - 本地图片">
+                <p class="caption">图2: 使用相对路径引用的本地图片</p>
+            </div>
+            
+            <p>相对路径则是相对于当前文件位置的路径。例如，如果图片放在项目目录的images文件夹中，可以使用"images/图片名.jpg"这样的相对路径。</p>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 我的GitHub博客. 保留所有权利.</p>
+    </footer>
+</body>
 </html>
